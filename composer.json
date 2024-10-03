@@ -1,0 +1,48 @@
+{
+  "name": "dashopapp/git-commit-checker",
+  "description": "Check coding standard & code syntax with Git pre-commit hook.",
+  "type": "package",
+  "license": "MIT",
+  "keywords": [
+    "dashopapp",
+    "dashopapp cms",
+    "dashopapp platform",
+    "dashopapp git commit checker"
+  ],
+  "homepage": "https://dashopapp.com",
+  "authors": [
+    {
+      "name": "Sang Nguyen",
+      "email": "sangnguyenplus@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Dashopapp\\GitCommitChecker\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Dashopapp\\GitCommitChecker\\Tests\\": "tests"
+    }
+  },
+  "require": {
+    "php": "^8.0|^8.1|^8.2",
+    "laravel/framework": "^9.32|^10.0||^11.0",
+    "laravel/pint": "^1.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0|^10.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Dashopapp\\GitCommitChecker\\Providers\\GitCommitCheckerServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "stable"
+}
